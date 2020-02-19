@@ -16,7 +16,9 @@ resources:
     name: srkarana/Test1
     
     
-
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
 
 trigger:
 - master
