@@ -21,5 +21,8 @@ pool:
 steps:
 - checkout: self
 - checkout: Test
+- checkout: Test1/@refs/heads/master
+- checkout: Test2/@refs/heads/master
+
 
 - script: dir $(Build.SourcesDirectory)
