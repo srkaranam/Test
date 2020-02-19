@@ -13,7 +13,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: Test
+- checkout: MyGitHubRepo
 
 
 - script: dir $(Build.SourcesDirectory)
