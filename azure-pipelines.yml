@@ -1,9 +1,9 @@
 resources:
   repositories:
-  - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
-    type: github
-    endpoint: test
-    name: srkaranam/Test
+#  - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
+#    type: github
+#    endpoint: test
+#   name: srkaranam/Test
   - repository: MyGitHubRepo1
     type: github
     endpoint: test
@@ -15,7 +15,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: MyGitHubRepo
+#- checkout: MyGitHubRepo
 - checkout: MyGitHubRepo1
 
 
