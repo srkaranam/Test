@@ -10,14 +10,7 @@ resources:
     type: github
     endpoint: github.com_srkarana
     name: srkarana/Test
-  - repository: Test1
-    type: github
-    endpoint: github.com_srkarana
-    name: srkarana/Test1
-  - repository: Test2
-    type: github
-    endpoint: github.com_srkarana
-    name: srkarana/Test2
+  
 
 trigger:
 - master
