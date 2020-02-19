@@ -4,7 +4,7 @@ resources:
 #    type: github
 #    endpoint: test
 #   name: srkaranam/Test
-  - repository: MyGitHubRepo1
+  - repository: MyGitHubRepo
     type: github
     endpoint: test
     name: srkaranam/Test1
@@ -16,7 +16,7 @@ pool:
 
 steps:
 #- checkout: MyGitHubRepo
-- checkout: MyGitHubRepo1
+- checkout: MyGitHubRepo
 
 
 - script: dir $(Build.SourcesDirectory)
