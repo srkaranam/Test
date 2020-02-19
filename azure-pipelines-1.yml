@@ -1,0 +1,34 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+
+resources:
+  repositories:
+  - repository: Test
+    type: github
+    endpoint: github.com_srkarana
+    name: srkaranam/Test
+  - repository: Test1
+    type: github
+    endpoint: github.com_srkarana
+    name: srkaranam/Test1
+  - repository: Test2
+    type: github
+    endpoint: github.com_srkarana
+    name: srkaranam/Test2
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: Test
+- checkout: Test1
+- checkout: Test2
+
+- script: dir $(Build.SourcesDirectory)
