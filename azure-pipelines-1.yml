@@ -25,7 +25,7 @@ pool: Default
   
 steps:
 #- checkout: Test
-- checkout: Test1
+- checkout: self
 
 
 
