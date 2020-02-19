@@ -2,7 +2,7 @@ resources:
   repositories:
   - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
     type: github
-    endpoint: srkaranam
+    endpoint: test
     name: srkarana/Test
   
 
