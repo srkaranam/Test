@@ -6,10 +6,10 @@
 
 resources:
   repositories:
-  - repository: Test
-    type: github
-    endpoint: "GitHub - srkarana"
-    name: srkaranam/Test
+#  - repository: Test
+#   type: github
+#   endpoint: "GitHub - srkarana"
+#    name: srkaranam/Test
   - repository: Test1
     type: github
     endpoint: "GitHub - srkarana"
@@ -24,7 +24,7 @@ trigger:
 pool: Default
   
 steps:
-- checkout: Test
+#- checkout: Test
 - checkout: Test1
 
 
