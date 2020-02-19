@@ -28,7 +28,5 @@ pool:
 steps:
 - checkout: self
 - checkout: Test
-- checkout: Test1
-- checkout: Test2
 
 - script: dir $(Build.SourcesDirectory)
