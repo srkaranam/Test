@@ -8,11 +8,11 @@ resources:
   repositories:
   - repository: Test
     type: github
-    endpoint: github.com_srkarana
+    endpoint: srkaranam
     name: srkaranam/Test
   - repository: Test1
     type: github
-    endpoint: github.com_srkarana
+    endpoint: srkaranam
     name: srkaranam/Test1
     
     
