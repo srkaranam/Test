@@ -10,10 +10,10 @@ resources:
     type: github
     endpoint: srkaranam
     name: srkaranam/Test
-  - repository: Test1
-    type: github
-    endpoint: srkaranam
-    name: srkaranam/Test1
+#  - repository: Test1
+#    type: github
+#    endpoint: srkaranam
+#    name: srkaranam/Test1
     
     
 
