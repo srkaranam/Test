@@ -13,7 +13,7 @@ resources:
   - repository: Test1
     type: github
     endpoint: test
-    name: srkaranam/Test1
+    name: srkarana/Test1
     
     
 
