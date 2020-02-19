@@ -3,7 +3,7 @@ resources:
   - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
     type: github
     endpoint: test
-    name: srkarana/Test
+    name: srkaranam/Test
   
 
 trigger:
