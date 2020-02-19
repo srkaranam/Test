@@ -5,7 +5,9 @@ resources:
     type: github
     endpoint: test
     name: srkaranam/Test
-
+schedules:
+- cron: "0 3 * JAN-DEC *"
+  displayName: Daily midnight build
   
 trigger:
 - master
