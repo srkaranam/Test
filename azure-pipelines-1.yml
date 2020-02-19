@@ -23,9 +23,8 @@ resources:
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
+pool: default
+  
 steps:
 
 - checkout: Test
