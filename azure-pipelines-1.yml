@@ -29,7 +29,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: self
+
 - checkout: Test
 - checkout: Test1
 - checkout: Test2
