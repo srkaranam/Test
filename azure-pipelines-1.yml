@@ -10,12 +10,10 @@ resources:
     type: github
     endpoint: github.com_srkarana
     name: srkarana/Test
-  - repository: azdo
-    type: git
-    name: multirepo
-  - repository: azdo1
-    type: git
-    name: repo2
+  - repository: Test1
+    type: github
+    endpoint: github.com_srkarana
+    name: srkarana/Test1
     
     
 
