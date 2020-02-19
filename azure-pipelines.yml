@@ -3,7 +3,7 @@ resources:
   - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
     type: github
     endpoint: test
-    name: srkaranam/Test1
+    name: srkaranam/Test
 trigger:
 - master
 
@@ -11,7 +11,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-#- checkout: MyGitHubRepo
 - checkout: MyGitHubRepo
 
 
