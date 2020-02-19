@@ -26,8 +26,8 @@ pool: default
 steps:
 
 - checkout: Test
-- checkout: azdo
-- checkout: azdo1
+- checkout: Test1
+
 
 
 
