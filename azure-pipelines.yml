@@ -4,6 +4,11 @@ resources:
     type: github
     endpoint: test
     name: srkaranam/Test
+  - repository: MyGitHubRepo1 # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: test
+    name: srkaranam/Test1
+    ref: master
 trigger:
 - master
 
@@ -12,6 +17,7 @@ pool:
 
 steps:
 - checkout: MyGitHubRepo
+- checkout: MyGitHubRepo1
 
 
 - script: dir $(Build.SourcesDirectory)
