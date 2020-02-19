@@ -13,6 +13,9 @@ resources:
   - repository: azdo
     type: git
     name: multirepo
+  - repository: azdo1
+    type: git
+    name: repo2
     
     
 
@@ -27,6 +30,7 @@ steps:
 
 - checkout: Test
 - checkout: azdo
+- checkout: azdo1
 
 
 
