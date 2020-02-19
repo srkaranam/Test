@@ -20,7 +20,7 @@ pool:
 steps:
 - checkout: self
 - checkout: Test
-- checkout: Test1
-- checkout: Test2
+- checkout: srkarana\Test1
+- checkout: srkarana\Test2
 
 - script: dir $(Build.SourcesDirectory)
