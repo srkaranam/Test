@@ -6,7 +6,7 @@ resources:
     endpoint: test
     name: srkaranam/Test
 schedules:
-- cron: "0 0 21/1 * *"
+- cron: "0 0 * JAN-DEC *"
   displayName: Daily midnight build
   
 trigger:
