@@ -10,7 +10,6 @@ resources:
     type: github
     endpoint: github.com_srkarana
     name: srkarana/Test
-  - 
 
 trigger:
 - master
