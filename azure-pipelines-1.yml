@@ -6,19 +6,20 @@
 
 resources:
   repositories:
-#  - repository: Test
-#   type: github
-#   endpoint: "GitHub - srkarana"
-#    name: srkaranam/Test
-  - repository: Test1
+  - repository: Test
+    type: github
+    endpoint: "GitHub - srkarana"
+    name: srkaranam/Test
+  - repository: Test2
     type: github
     endpoint: test
-    name: srkarana/Test1
+    name: srkarana/Test2
+  - repository: Test3
+    type: github
+    endpoint: test
+    name: srkarana/Test2
     
     
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily midnight build
 
 trigger:
 - master
@@ -26,8 +27,11 @@ trigger:
 pool: Default
   
 steps:
-#- checkout: Test
 - checkout: self
+- checkout: Test
+- checkout: Test2
+- checkout: Test3
+
 
 
 
