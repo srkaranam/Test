@@ -8,15 +8,15 @@ resources:
   repositories:
   - repository: Test
     type: github
-    endpoint: "GitHub - srkarana"
+    endpoint: "srkaranam"
     name: srkaranam/Test
   - repository: Test2
     type: github
-    endpoint: "GitHub - srkarana"
+    endpoint: "srkaranam"
     name: srkaranam/Test2
   - repository: Test3
     type: github
-    endpoint: "GitHub - srkarana"
+    endpoint: "srkaranam"
     name: srkaranam/Test3
     
     
