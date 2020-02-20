@@ -12,11 +12,11 @@ resources:
     name: srkaranam/Test
   - repository: Test2
     type: github
-    endpoint: test
+    endpoint: "GitHub - srkarana"
     name: srkarana/Test2
   - repository: Test3
     type: github
-    endpoint: test
+    endpoint: "GitHub - srkarana"
     name: srkarana/Test2
     
     
