@@ -3,11 +3,12 @@ resources:
 
   - repository: MyGitHubRepo1 # The name used to reference this repository in the checkout step
     type: github
-    endpoint: test
+    endpoint: srkaranam
     name: srkaranam/Test
-schedules:
-- cron: "0 3 * JAN-DEC *"
-  displayName: Daily midnight build
+  - repository: MyGitHubRepo2 # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: srkaranam
+    name: srkaranam/Test2
   
 trigger:
 - master
@@ -16,7 +17,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self
 - checkout: MyGitHubRepo1
+- checkout: MyGitHubRepo2
 
 
 - script: dir $(Build.SourcesDirectory)
