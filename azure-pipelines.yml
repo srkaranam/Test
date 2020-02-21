@@ -11,8 +11,8 @@ resources:
     name: srkaranam/Test2
 
     
-trigger:
-- master
+
+
 schedules:
 - cron: "0 3 * * *"
   displayName: Daily midnight build
