@@ -9,7 +9,12 @@ resources:
     type: github
     endpoint: srkaranam
     name: srkaranam/Test2
-  
+schedules:
+- cron: '0 18 * * *'
+  displayName: Every night at 6pm
+  branches:
+    include:
+    - master
 trigger:
 - master
 
