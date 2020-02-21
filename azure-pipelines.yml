@@ -33,5 +33,6 @@ steps:
       # Write your commands here
       
       echo $(platform)
-
+      platform: x86
+      echo $(platform)
 - script: dir $(Build.SourcesDirectory)
