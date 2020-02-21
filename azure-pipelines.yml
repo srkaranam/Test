@@ -14,8 +14,8 @@ resources:
 trigger:
 - master
 schedules:
-- cron: '0 3 */3 * *'
-  displayName: Every night at 6pm
+- cron: '0 3 * * *'
+  displayName: Every night at 3 am
   branches:
    include:
    - master
