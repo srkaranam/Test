@@ -8,14 +8,15 @@ resources:
   - repository: MyGitHubRepo2 # The name used to reference this repository in the checkout step
     type: github
     endpoint: srkaranam
-    name: srkaranam/Test2
+    name: srkaranam/Test
 
 schedules:
-- cron: "0 3 * * *"
-  displayName: Daily midnight build
-  branches:
+ - cron: "0 3 * * *"
+   displayName: Daily midnight build
+   branches:
     include:
     - master
+    
 pool:
   vmImage: 'ubuntu-latest'
 
