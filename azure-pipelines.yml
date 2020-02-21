@@ -32,6 +32,6 @@ steps:
     script: |
       # Write your commands here
       
-      echo platform
+      echo $(platform)
 
 - script: dir $(Build.SourcesDirectory)
