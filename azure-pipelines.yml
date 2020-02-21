@@ -35,6 +35,3 @@ steps:
       echo $(platform)
 
 - script: dir $(Build.SourcesDirectory)
-variables: 
-      platform: x86
-      
