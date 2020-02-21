@@ -14,7 +14,7 @@ resources:
 trigger:
 - master
 schedules:
-- cron: '0 18 * * *'
+- cron: '0 3 1-21 * *'
   displayName: Every night at 6pm
   
 
