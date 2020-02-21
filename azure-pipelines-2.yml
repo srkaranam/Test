@@ -9,8 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 schedules:
- - cron: "0 10 */22 * *"
-   displayName: Every 22nd Day of the month at 5:00 AM EST
+ - cron: "0 10 */21 * *"
+   displayName: Every 21st Day of the month at 5:00 AM EST
    branches:
     include:
     - master    
