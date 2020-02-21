@@ -16,7 +16,10 @@ trigger:
 schedules:
 - cron: '0 3 */3 * *'
   displayName: Every night at 6pm
-  
+  branches:
+   include:
+   - master
+
 
 pool:
   vmImage: 'ubuntu-latest'
