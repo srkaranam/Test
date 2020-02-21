@@ -14,12 +14,12 @@ resources:
 trigger:
 - master
 schedules:
-- cron: '0 3 * * *'
-  displayName: Every night at 3 am
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
   branches:
-   include:
-   - master
-
+    include:
+    - master
+    
 
 pool:
   vmImage: 'ubuntu-latest'
