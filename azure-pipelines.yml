@@ -11,7 +11,7 @@ resources:
     name: srkaranam/Test
 
 schedules:
- - cron: "41 16 */1 * *"
+ - cron: "42 16 */1 * *"
    displayName: Daily midnight build
    branches:
     include:
