@@ -3,28 +3,14 @@ resources:
 
   - repository: MyGitHubRepo1 # The name used to reference this repository in the checkout step
     type: github
-    endpoint: srkaranam
+    endpoint: github.com_srkarana
     name: srkaranam/Test
-  - repository: MyGitHubRepo2 # The name used to reference this repository in the checkout step
-    type: github
-    endpoint: srkaranam
-    name: srkaranam/Test
-variables: 
- platform: x64;
-
-schedules:
- - cron: "42 16 * * *"
-   displayName: Daily midnight build
-   branches:
-    include:
-    - master    
+  
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
 - checkout: self
-- checkout: MyGitHubRepo1
-- checkout: MyGitHubRepo2
 
 - task: Bash@3
   inputs:
