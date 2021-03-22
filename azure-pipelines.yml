@@ -19,5 +19,6 @@ steps:
       # Write your commands here
       
       echo $(platform)
+      xxx
 
 - script: dir $(Build.SourcesDirectory)
