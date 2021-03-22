@@ -5,7 +5,9 @@ resources:
     type: github
     endpoint: github.com_srkarana
     name: srkaranam/Test
-  
+pr:
+- master
+
 pool:
   vmImage: 'ubuntu-latest'
 
